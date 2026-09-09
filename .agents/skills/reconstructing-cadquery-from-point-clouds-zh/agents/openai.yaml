@@ -1,0 +1,4 @@
+interface:
+  display_name: "点云 → CadQuery 序列重建（中文）"
+  short_description: "统一分析 NPY、PLY、XYZ，以 CAD 特征序列重建并量化精度"
+  default_prompt: "使用 $reconstructing-cadquery-from-point-clouds-zh 分析点云，建立尺寸证据和 CAD 操作计划，再输出独立 CadQuery 重建序列与误差验证；禁止网格转实体或整体包面。"

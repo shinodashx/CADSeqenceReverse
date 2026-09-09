@@ -1,0 +1,6 @@
+cadquery==2.8.0
+numpy
+scipy
+plyfile
+matplotlib
+vtk

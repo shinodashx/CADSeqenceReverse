@@ -1,0 +1,1 @@
+-r .agents/skills/reconstructing-cadquery-from-point-clouds-en/requirements.txt
