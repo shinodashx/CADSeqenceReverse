@@ -19,8 +19,8 @@ description: "Reconstructs STEP/STP as independently replayable CadQuery CAD fea
 ## 1. Check input and environment
 
 - Accept a complete `.step/.stp` or preserve complete pasted text verbatim. Check HEADER/DATA, closing markers, unique entity IDs, reference completeness, and external assembly files. Request missing input; never fabricate entities to repair truncation.
-- Preserve the source and its hash; check CadQuery/OCP and rendering tools. The preceding workflow ran with CadQuery 2.8.0; still verify the version used for this task.
-- Resolve STEP unit contexts, imported units, and instance transforms. Default outputs to mm; never multiply already-converted geometry by 25.4 again. Account for every in-scope part and instance.
+- Preserve the source and its hash; check CadQuery/OCP and rendering tools.
+- Resolve STEP unit contexts, imported units, and instance transforms. Default outputs to mm and account for every in-scope part and instance.
 
 ## 2. Measure and plan
 
@@ -61,11 +61,3 @@ description: "Reconstructs STEP/STP as independently replayable CadQuery CAD fea
 - Render and inspect source STEP and **reconstructed STEP** separately from matching viewpoints: opposed isometric views, necessary orthographic/section views, and feature stages. Inspect STL separately for discretization; source or STL images cannot replace reconstructed-CAD inspection.
 - Turn every visual suspicion into a dimensional/topological check. Repair the responsible sequence section, rebuild, and rerun failed checks plus potentially affected neighboring features. Report only checks actually executed.
 - Provide downloadable code/model packages and inspected images. Claim completion only with independent replay, geometry checks, export reimport, and visual inspection evidence. Similar volume, watertightness, valid solids, or similar appearance alone cannot prove accuracy.
-
-## Lessons from the case and optional motion
-
-- The earlier caster replaced approximately 0.488° tilted conical grooves with coaxial grooves and left some inner transitions sharp, with about 0.2094% volume difference. This is an **approximation example, not a high-accuracy acceptance standard**. Preserve actual tilted construction planes and local finishing; do not pattern asymmetric windows.
-- Add motion only when requested: fixed parts may be fused, but keep wheel/hub bodies independent and rotate about the actual wheel-center axis, not the world origin. Test several angles for center/volume invariance, fixed-frame position, and interference; inspect the actual animation.
-- Symmetric wheels may use a disclosed display-only angle marker. STL stores no motion, and ordinary STEP does not automatically carry joints/motors. Distinguish static fused exports, separated assemblies, and kinematic demonstrations; do not claim printable movement or valid dynamics without clearance/contact/force verification.
-
-References: [OpenAI skill-creator](https://github.com/openai/skills/blob/main/skills/.system/skill-creator/SKILL.md), [text-to-cad CAD skill](https://github.com/earthtojake/text-to-cad/blob/main/skills/cad/SKILL.md). Adapt its validation/repair loop, not its build123d/cadgen factories or imported-STEP results; installing that toolchain is not required. Keep this file self-contained.

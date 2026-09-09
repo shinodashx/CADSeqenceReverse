@@ -1,0 +1,4 @@
+interface:
+  display_name: "点云 → CadQuery（纯可视化·中文）"
+  short_description: "仅看点云多视图，保留序列建模、圆角接合、迭代和 CAD 质量检查"
+  default_prompt: "使用 $reconstructing-cadquery-visually，仅观察点云实际多视图，建立证据和操作计划，输出独立 CadQuery 序列、STEP 与视觉迭代报告，并检查 CAD 质量。"

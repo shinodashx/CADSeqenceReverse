@@ -1,0 +1,4 @@
+interface:
+  display_name: "Point Cloud → CadQuery (Numerical-only · English)"
+  short_description: "Reconstruct CAD sequences using only XYZ and Python analysis"
+  default_prompt: "Use $reconstructing-cadquery-numerically-en to analyze my point cloud only with XYZ and Python, establish evidence and an operation plan, and output a standalone CadQuery sequence, STEP, numerical acceptance, and CAD-only quality checks."

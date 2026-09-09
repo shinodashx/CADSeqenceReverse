@@ -1,0 +1,4 @@
+interface:
+  display_name: "Point Cloud → CadQuery (Visual-only · English)"
+  short_description: "Reconstruct CAD sequences from rendered point-cloud views"
+  default_prompt: "Use $reconstructing-cadquery-visually-en to inspect only actual multi-view point-cloud renders, establish evidence and an operation plan, output a standalone CadQuery sequence, STEP, and visual iteration report, and check CAD quality."

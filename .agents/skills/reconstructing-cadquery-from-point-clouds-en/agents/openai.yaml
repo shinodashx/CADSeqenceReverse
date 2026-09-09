@@ -1,4 +1,4 @@
 interface:
-  display_name: "Point Cloud → CadQuery Sequence (English)"
-  short_description: "Analyze NPY/PLY/XYZ and rebuild verified CAD feature sequences"
-  default_prompt: "Use $reconstructing-cadquery-from-point-clouds-en to analyze my point cloud, establish dimension evidence and a CAD operation plan, then deliver a standalone CadQuery reconstruction sequence and measured errors; do not convert meshes or wrap the cloud."
+  display_name: "Point Cloud → CadQuery Sequence Reconstruction (English)"
+  short_description: "Reconstruct CAD sequences with XYZ-led analysis and validation"
+  default_prompt: "Use $reconstructing-cadquery-from-point-clouds-en to lead with XYZ measurement and support it with multiple views, establish evidence and an operation plan, and output a standalone CadQuery sequence, STEP, and iterative acceptance report."
